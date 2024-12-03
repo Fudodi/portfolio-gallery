@@ -1,5 +1,7 @@
 .l-wrapper {
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -18,11 +20,17 @@
 .l-header-flex {
   display: flex;
   width: 100%;
-  max-width: 2000px;
+  border-right: 16px solid #fff;
+
 }
 @media screen and (max-width: 1100px) {
   .l-header-flex {
     display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .l-header-flex {
+border: none;
   }
 }
 
@@ -47,11 +55,16 @@
 
 .l-contents-flex {
   width: 100vw;
-  max-width: 2000px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   z-index: 5;
+}
+@media screen and (max-width: 1440px) {
+  .l-contents-flex {
+    border-right: 16px solid #fff;
+  }
 }
 
 .l-contents-box-left {

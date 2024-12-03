@@ -1,18 +1,1 @@
-.u-border {
-  border-right: 16px solid $border-color;
-}
 
-.u-border-content {
-  border-top: 16px solid $border-color;
-  border-left: 16px solid $border-color;
-}
-
-@media screen and (max-width: 800px) {
-  /*　画面サイズが800pxまではここを読み込む　*/
-  .u-border {
-    border: none;
-  }
-  .u-border-content {
-    border: none;
-  }
-}

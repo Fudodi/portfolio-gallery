@@ -1,5 +1,5 @@
 html {
-  background-color: $border-color;
+  background-color: #fff;
 }
 
 /*
@@ -32,10 +32,14 @@ back to top button
 header profile area
 */
 
+.h-langSwitch-body {
+  font-family: $lato;
+  font-weight: bold;
+}
+
 .h-profile-box {
-  @include border;
   background-color: #fff;
-  padding-left: 2vw;
+  padding: 0 56px;
 }
 
 .h-name-wrapper {
@@ -65,7 +69,7 @@ header profile area
 .h-aboutMe {
   font-size: 24px;
   font-weight: bold;
-  margin: 32px auto 48px;
+  margin: 60px auto 48px;
 }
 
 .h-history-wrapper {
@@ -134,7 +138,7 @@ contains area
   background-color: #b7eb56;
   height: 20vw;
   max-height: 400px;
-  @include border-content;
+  @include image-margin-bottom;
   overflow: hidden;
 }
 
@@ -143,7 +147,7 @@ contains area
   background-color: #9287f3;
   height: 30vw;
   max-height: 600px;
-  @include border-content;
+  @include image-margin-bottom;
   overflow: hidden;
 }
 
@@ -152,7 +156,7 @@ contains area
   background-color: #69c72a;
   height: 40vw;
   max-height: 800px;
-  @include border-content;
+  @include image-margin-bottom;
   overflow: hidden;
 }
 

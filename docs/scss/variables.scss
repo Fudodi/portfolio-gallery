@@ -7,8 +7,6 @@ $link: #427bb0;
 $linkHover: #2bd3f8;
 $linkVisited: #1b4e7d;
 
-$border-color: #fff;
-
 @import url("https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP|Noto+Serif+JP|Playfair+Display");
 
 $notoSans: "Noto Sans JP", sans-serif;
@@ -16,14 +14,8 @@ $notoSerif: "Noto Serif JP", serif;
 $lato: "Lato", sans-serif;
 $playfair: "Playfair Display", serif;
 
-@mixin border {
-  border-top: 16px solid $border-color;
-  border-left: 16px solid $border-color;
-}
-
-@mixin border-content {
-  border-right: 16px solid $border-color;
-  border-bottom: 16px solid $border-color;
+@mixin image-margin-bottom {
+  margin-bottom: 16px;
 }
 
 $transition: all 0.2s ease-in-out;

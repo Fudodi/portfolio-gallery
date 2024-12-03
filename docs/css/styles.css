@@ -148,7 +148,19 @@ prefix: .l-
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 80px;
   overflow: hidden; }
+
+@media screen and (max-width: 800px) {
+  .l-wrapper {
+    padding: 0; } }
+
+.l-langSwitch {
+  padding: 30px 0 0 32px; }
+
+@media screen and (max-width: 1100px) {
+  .l-langSwitch {
+    padding: 30px 0 0 20px; } }
 
 .l-link-wrapper {
   overflow: hidden; }
@@ -165,9 +177,7 @@ prefix: .l-
 
 @media screen and (max-width: 1100px) {
   .l-sp-disp {
-    display: block; } }
-
-@media screen and (max-width: 1100px) {
+    display: block; }
   .l-sp-nonDisp {
     display: none; } }
 
@@ -175,12 +185,11 @@ prefix: .l-
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  border-right: 16px solid #fff; }
+  margin-bottom: 16px; }
 
 @media screen and (max-width: 1100px) {
   .l-header-flex {
-    display: block;
-    border: none; } }
+    display: block; } }
 
 .l-header-flex-left {
   flex: 3; }
@@ -192,31 +201,34 @@ prefix: .l-
 
 .l-header-flex-right-imgWrapper {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-left: 14px; }
+
+@media screen and (max-width: 800px) {
+  .l-header-flex-right-imgWrapper {
+    padding: 0; } }
 
 .l-header-flex-right-img {
   margin-top: 16px; }
 
 .l-contents-flex {
-  width: 100vw;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   z-index: 5; }
 
-@media screen and (max-width: 1440px) {
-  .l-contents-flex {
-    border-right: 16px solid #fff; } }
-
 .l-contents-box-left {
-  width: 30%; }
+  flex: 3;
+  padding-right: 16px; }
 
 .l-contents-box-middle {
-  width: 30%; }
+  flex: 3;
+  padding-right: 16px; }
 
 .l-contents-box-right {
-  width: 40%; }
+  flex: 4; }
 
 @media screen and (max-width: 800px) {
   .l-link-top {
@@ -241,9 +253,11 @@ prefix: .l-
     margin: 0 auto;
     display: block; }
   .l-contents-box-left {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   .l-contents-box-middle {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   .l-contents-box-right {
     width: 100%; } }
 
@@ -297,11 +311,13 @@ back to top button
 ======================================
 header profile area
 */
+.h-langSwitch-body {
+  font-family: "Lato", sans-serif;
+  font-weight: bold; }
+
 .h-profile-box {
-  border-top: 16px solid #fff;
-  border-left: 16px solid #fff;
   background-color: #fff;
-  padding-left: 2vw; }
+  padding: 0 56px; }
 
 .h-name-wrapper {
   margin: 100px 0 52px; }
@@ -326,7 +342,7 @@ header profile area
 .h-aboutMe {
   font-size: 24px;
   font-weight: bold;
-  margin: 32px auto 48px; }
+  margin: 60px auto 48px; }
 
 .h-history-wrapper {
   font-family: "Noto Sans JP", sans-serif;
@@ -374,8 +390,7 @@ contains area
   background-color: #b7eb56;
   height: 20vw;
   max-height: 400px;
-  border-right: 16px solid #fff;
-  border-bottom: 16px solid #fff;
+  margin-bottom: 16px;
   overflow: hidden; }
 
 .p-c-box-2 {
@@ -383,8 +398,7 @@ contains area
   background-color: #9287f3;
   height: 30vw;
   max-height: 600px;
-  border-right: 16px solid #fff;
-  border-bottom: 16px solid #fff;
+  margin-bottom: 16px;
   overflow: hidden; }
 
 .p-c-box-3 {
@@ -392,8 +406,7 @@ contains area
   background-color: #69c72a;
   height: 40vw;
   max-height: 800px;
-  border-right: 16px solid #fff;
-  border-bottom: 16px solid #fff;
+  margin-bottom: 16px;
   overflow: hidden; }
 
 /*
@@ -577,16 +590,3 @@ projects
 prefix: .u-
 
 */
-.u-border {
-  border-right: 16px solid #fff; }
-
-.u-border-content {
-  border-top: 16px solid #fff;
-  border-left: 16px solid #fff; }
-
-@media screen and (max-width: 800px) {
-  /*　画面サイズが800pxまではここを読み込む　*/
-  .u-border {
-    border: none; }
-  .u-border-content {
-    border: none; } }

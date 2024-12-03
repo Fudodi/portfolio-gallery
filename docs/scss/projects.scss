@@ -91,6 +91,11 @@ header profile area
   margin-bottom: 32px;
 }
 
+.h-image {
+  margin-top: 32px;
+  @include image-decoration;
+}
+
 @media screen and (max-width: 1100px) {
   .h-profile-box {
     padding-bottom: 24px;
@@ -135,29 +140,26 @@ contains area
 
 .p-c-box-1 {
   position: relative;
-  background-color: #b7eb56;
   height: 20vw;
   max-height: 400px;
   @include image-margin-bottom;
-  overflow: hidden;
+  @include image-decoration;
 }
 
 .p-c-box-2 {
   position: relative;
-  background-color: #9287f3;
   height: 30vw;
   max-height: 600px;
   @include image-margin-bottom;
-  overflow: hidden;
+  @include image-decoration;
 }
 
 .p-c-box-3 {
   position: relative;
-  background-color: #69c72a;
   height: 40vw;
   max-height: 800px;
   @include image-margin-bottom;
-  overflow: hidden;
+  @include image-decoration;
 }
 
 /*

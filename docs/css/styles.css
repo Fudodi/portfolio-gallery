@@ -185,7 +185,7 @@ prefix: .l-
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  margin-bottom: 16px; }
+  margin-bottom: 32px; }
 
 @media screen and (max-width: 1100px) {
   .l-header-flex {
@@ -202,14 +202,11 @@ prefix: .l-
 .l-header-flex-right-imgWrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 14px; }
+  padding-left: 26px; }
 
 @media screen and (max-width: 800px) {
   .l-header-flex-right-imgWrapper {
     padding: 0; } }
-
-.l-header-flex-right-img {
-  margin-top: 16px; }
 
 .l-contents-flex {
   width: 100%;
@@ -221,11 +218,11 @@ prefix: .l-
 
 .l-contents-box-left {
   flex: 3;
-  padding-right: 16px; }
+  padding-right: 32px; }
 
 .l-contents-box-middle {
   flex: 3;
-  padding-right: 16px; }
+  padding-right: 32px; }
 
 .l-contents-box-right {
   flex: 4; }
@@ -360,6 +357,15 @@ header profile area
   line-height: 1.8em;
   margin-bottom: 32px; }
 
+.h-image {
+  margin-top: 32px;
+  display: flex;
+  border: 1px solid #666666;
+  border-radius: 8px;
+  box-shadow: 5px 8px 0 0 #b3bcc7;
+  overflow: hidden;
+  background-color: #252525; }
+
 @media screen and (max-width: 1100px) {
   .h-profile-box {
     padding-bottom: 24px; }
@@ -387,27 +393,39 @@ contains area
 */
 .p-c-box-1 {
   position: relative;
-  background-color: #b7eb56;
   height: 20vw;
   max-height: 400px;
-  margin-bottom: 16px;
-  overflow: hidden; }
+  margin-bottom: 48px;
+  display: flex;
+  border: 1px solid #666666;
+  border-radius: 8px;
+  box-shadow: 5px 8px 0 0 #b3bcc7;
+  overflow: hidden;
+  background-color: #252525; }
 
 .p-c-box-2 {
   position: relative;
-  background-color: #9287f3;
   height: 30vw;
   max-height: 600px;
-  margin-bottom: 16px;
-  overflow: hidden; }
+  margin-bottom: 48px;
+  display: flex;
+  border: 1px solid #666666;
+  border-radius: 8px;
+  box-shadow: 5px 8px 0 0 #b3bcc7;
+  overflow: hidden;
+  background-color: #252525; }
 
 .p-c-box-3 {
   position: relative;
-  background-color: #69c72a;
   height: 40vw;
   max-height: 800px;
-  margin-bottom: 16px;
-  overflow: hidden; }
+  margin-bottom: 48px;
+  display: flex;
+  border: 1px solid #666666;
+  border-radius: 8px;
+  box-shadow: 5px 8px 0 0 #b3bcc7;
+  overflow: hidden;
+  background-color: #252525; }
 
 /*
 ======================================

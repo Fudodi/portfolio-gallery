@@ -15,7 +15,15 @@ $lato: "Lato", sans-serif;
 $playfair: "Playfair Display", serif;
 
 @mixin image-margin-bottom {
-  margin-bottom: 16px;
+  margin-bottom: 48px;
+}
+@mixin image-decoration {
+  display: flex;
+  border: 1px solid $black;
+  border-radius: 8px;
+  box-shadow: 5px 8px 0 0 #b3bcc7;
+  overflow: hidden;
+  background-color: $black-s;
 }
 
 $transition: all 0.2s ease-in-out;

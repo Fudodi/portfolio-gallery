@@ -163,6 +163,10 @@ prefix: .l-
   width: 100%;
   max-width: 2000px; }
 
+@media screen and (max-width: 1100px) {
+  .l-header-flex {
+    display: block; } }
+
 .l-header-flex-left {
   flex: 3; }
 

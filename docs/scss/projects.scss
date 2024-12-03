@@ -38,56 +38,47 @@ header profile area
   padding-left: 2vw;
 }
 
-.p-h-english-name {
-  font-family: $lato;
-  font-size: 48px;
-  line-height: 1.2em;
-  margin: 1vw auto 1vw -3px;
+.h-name-wrapper {
+  margin: 100px 0 52px;
+}
+
+.h-name-main {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
   color: $black-s;
 }
 
-.p-h-japanese-name {
-  font-family: $notoSans;
-  font-size: 32px;
+.h-name-sub {
+  font-size: 20px;
   font-weight: 100;
   color: $black-s;
-  margin-bottom: 4vw;
 }
 
-.p-h-email {
-  font-family: $lato;
+.h-email {
   font-size: 20px;
   font-weight: 100;
   color: $black;
-  margin-bottom: 7vw;
+  margin-bottom: 100px;
 }
 
-.p-h-history-wrapper {
-  display: flex;
-}
-
-.p-h-history-title {
-  width: 160px;
+.h-history-wrapper {
   font-family: $notoSans;
+  margin-bottom: 48px;
+}
+
+.h-history-title {
   color: $black-s;
-  h3 {
-    font-size: 20px;
-    font-weight: 900;
-    margin: 4px auto 16px;
-  }
-  h4 {
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 16px;
 }
 
-.p-h-history-detail {
-  flex: 1;
-  font-family: $notoSans;
+.h-history-detail {
   color: $black;
-  padding-left: 40px;
   font-size: 16px;
   line-height: 1.8em;
+  margin-bottom: 32px;
 }
 
 .p-h-upper-box {

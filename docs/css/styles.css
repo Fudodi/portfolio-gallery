@@ -281,49 +281,41 @@ header profile area
   background-color: #fff;
   padding-left: 2vw; }
 
-.p-h-english-name {
-  font-family: "Lato", sans-serif;
-  font-size: 48px;
-  line-height: 1.2em;
-  margin: 1vw auto 1vw -3px;
+.h-name-wrapper {
+  margin: 100px 0 52px; }
+
+.h-name-main {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
   color: #252525; }
 
-.p-h-japanese-name {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 32px;
+.h-name-sub {
+  font-size: 20px;
   font-weight: 100;
-  color: #252525;
-  margin-bottom: 4vw; }
+  color: #252525; }
 
-.p-h-email {
-  font-family: "Lato", sans-serif;
+.h-email {
   font-size: 20px;
   font-weight: 100;
   color: #666666;
-  margin-bottom: 7vw; }
+  margin-bottom: 100px; }
 
-.p-h-history-wrapper {
-  display: flex; }
-
-.p-h-history-title {
-  width: 160px;
+.h-history-wrapper {
   font-family: "Noto Sans JP", sans-serif;
-  color: #252525; }
-  .p-h-history-title h3 {
-    font-size: 20px;
-    font-weight: 900;
-    margin: 4px auto 16px; }
-  .p-h-history-title h4 {
-    font-size: 14px;
-    margin-bottom: 32px; }
+  margin-bottom: 48px; }
 
-.p-h-history-detail {
-  flex: 1;
-  font-family: "Noto Sans JP", sans-serif;
+.h-history-title {
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 16px; }
+
+.h-history-detail {
   color: #666666;
-  padding-left: 40px;
   font-size: 16px;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  margin-bottom: 32px; }
 
 .p-h-upper-box {
   position: relative;
@@ -555,20 +547,6 @@ prefix: .u-
 .u-border-content {
   border-top: 16px solid #fff;
   border-left: 16px solid #fff; }
-
-.u-pdg-32-btm {
-  padding-bottom: 32px; }
-
-.u-pdg-64-btm {
-  padding-bottom: 64px; }
-
-.u-mgn-2vw-btm {
-  margin-bottom: 2vw; }
-
-@media screen and (max-width: 1260px) {
-  /*　画面サイズが1260pxまではここを読み込む　*/
-  .u-pdg-64-btm {
-    padding-bottom: 8px; } }
 
 @media screen and (max-width: 800px) {
   /*　画面サイズが800pxまではここを読み込む　*/

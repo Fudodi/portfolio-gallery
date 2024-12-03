@@ -32,7 +32,7 @@ back to top button
 header profile area
 */
 
-.p-h-profile-box {
+.h-profile-box {
   @include border;
   background-color: #fff;
   padding-left: 2vw;
@@ -43,23 +43,23 @@ header profile area
 }
 
 .h-name-main {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 16px;
   color: $black-s;
 }
 
 .h-name-sub {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 100;
   color: $black-s;
 }
 
 .h-email {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 100;
   color: $black;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .h-history-wrapper {
@@ -79,19 +79,6 @@ header profile area
   font-size: 16px;
   line-height: 1.8em;
   margin-bottom: 32px;
-}
-
-.p-h-upper-box {
-  position: relative;
-
-  overflow: hidden;
-  @include border;
-}
-
-.p-h-lower-box {
-  position: relative;
-  @include border;
-  overflow: hidden;
 }
 
 /*

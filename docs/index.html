@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="l-wrapper" id="top">
+
+    <div class="l-link-wrapper" id="scrollTop">
       <div class="l-link-top">
         <div class="p-link-top">
           <div v-on:click="scrollTop">
@@ -17,8 +18,11 @@
           </div>
         </div>
       </div>
-      <div class="l-header-grid u-border" id="header">
-        <div class="l-header-profile-box p-h-profile-box">
+    </div>
+
+    <div class="l-wrapper">
+      <div class="l-header-flex u-border" id="header">
+        <div class="l-header-flex-left h-profile-box">
           <div class="p-h-langSwitch">JP / EN</div>
 
           <!-- 履歴ここから -->
@@ -54,8 +58,9 @@
                 フロントエンドエンジニア
               </div>
               <div class="h-history-detail">
-                リクルート系列のウェブサイト制作に3年従事。<br>
+                ウェブサイト制作会社に3年勤務。<br>
                 html, css, scss, javaScript, jQuery, webpack, git等使用。<br>
+                このサイトも自作しています。<br>
               </div>
             </div>
           </div>
@@ -63,44 +68,28 @@
         <!-- 履歴ここまで -->
       
         </div>
-        <a href="#"
-          ><div class="l-header-content-upper-box p-h-upper-box">
+
+        <!-- Flex 右画像カラム -->
+        <div class="l-header-flex-right">
+          <div class="l-header-flex-right-imgWrapper">
+
+            <!-- 上段 -->
+          <div>
             <!--
               <div class="p-u-hover-comment">
 
-
-
-
-
-
-
-
-
-
-
-
                 <p>サンプル説明文<br />sample</p>
-
-
-
-
-
-
-
-
-
-
-
 
               </div>
             -->
-            <img class="p-u-box-img" src="imgs/bird1.png" /></div
-        ></a>
-        <div class="l-header-content-lower-box p-h-lower-box">
-          <img class="p-u-box-img" src="imgs/inko-icon.png" />
-          <!--
-            <img class="p-u-box-img p-u-scale" src="imgs/portfolio-draft.png" />
-          -->
+            <img class="l-header-flex-right-img p-u-box-img" src="imgs/bird1.png" />
+          </div>
+          <!-- 下段 -->
+          <div>
+            <img class="l-header-flex-right-img p-u-box-img" src="imgs/inko-icon.png" />
+          </div>
+          </div>
+          
         </div>
       </div>
 

@@ -167,73 +167,19 @@ contains area
 universal
 */
 
-.p-u-box-text {
-  font-family: $notoSans;
-  font-size: 16px;
-  font-weight: 100;
-  color: $black-s;
-  padding: 16px;
-  line-height: 1.5em;
-}
-
-.p-u-box-title {
-  font-family: $notoSans;
-  color: $black-s;
-  padding: 16px;
-  line-height: 2em;
-  cursor: pointer;
-  h3 {
-    font-size: 36px;
-    font-weight: 900;
-    margin-bottom: 24px;
-  }
-  p {
-    font-size: 16px;
-    font-weight: 100;
-  }
-}
-
-.p-u-box-title:hover {
-  background-color: $vuecolor;
-  color: #fff;
+.u-box-transition {
   transition: $transition;
 }
 
-.p-u-box-img {
+.u-box-transition:hover {
+  transform: scale(1.04);
+}
+
+.u-box-img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: cover;
-  transition: $transition;
-}
-
-.p-u-hover-comment {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-family: $notoSans;
-  font-size: 16px;
-  line-height: 1.5em;
-  background: $vuecolor;
-  color: #fff;
-  padding: 16px;
-  cursor: pointer;
-  transition: $transition;
-  opacity: 0;
-}
-
-.p-u-hover-comment:hover {
-  opacity: 1;
-}
-
-.p-u-scale {
-  cursor: pointer;
-}
-
-.p-u-scale:hover {
-  transform: scale(1.1);
 }
 
 /*

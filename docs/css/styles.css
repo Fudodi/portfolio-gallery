@@ -439,64 +439,17 @@ contains area
 ======================================
 universal
 */
-.p-u-box-text {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  color: #252525;
-  padding: 16px;
-  line-height: 1.5em; }
-
-.p-u-box-title {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #252525;
-  padding: 16px;
-  line-height: 2em;
-  cursor: pointer; }
-  .p-u-box-title h3 {
-    font-size: 36px;
-    font-weight: 900;
-    margin-bottom: 24px; }
-  .p-u-box-title p {
-    font-size: 16px;
-    font-weight: 100; }
-
-.p-u-box-title:hover {
-  background-color: #3e8cac;
-  color: #fff;
+.u-box-transition {
   transition: all 0.2s ease-in-out; }
 
-.p-u-box-img {
+.u-box-transition:hover {
+  transform: scale(1.04); }
+
+.u-box-img {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  object-fit: cover;
-  transition: all 0.2s ease-in-out; }
-
-.p-u-hover-comment {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  background: #3e8cac;
-  color: #fff;
-  padding: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  opacity: 0; }
-
-.p-u-hover-comment:hover {
-  opacity: 1; }
-
-.p-u-scale {
-  cursor: pointer; }
-
-.p-u-scale:hover {
-  transform: scale(1.1); }
+  object-fit: cover; }
 
 /*
 =============================================================

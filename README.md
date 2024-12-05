@@ -1,6 +1,6 @@
 # m-portfolio-gallery
 Made by SCSS + FLOCSS
-https://toriksy.github.io/portfolio-gallery/
+https://de-uchi.github.io/portfolio-gallery/
 
 ---
 

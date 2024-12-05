@@ -142,7 +142,6 @@ contains area
 
 .c-box-1 {
   position: relative;
-  height: 20vw;
   max-height: 400px;
   @include image-margin-bottom;
   @include image-decoration;
@@ -151,7 +150,6 @@ contains area
 
 .c-box-2 {
   position: relative;
-  height: 30vw;
   max-height: 600px;
   @include image-margin-bottom;
   @include image-decoration;
@@ -160,7 +158,6 @@ contains area
 
 .c-box-3 {
   position: relative;
-  height: 40vw;
   max-height: 800px;
   @include image-margin-bottom;
   @include image-decoration;
@@ -273,12 +270,8 @@ Media query
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   /*　画面サイズが800pxまではここを読み込む　*/
-  html {
-    background-color: #fff;
-  }
-
   .p-link-top {
     width: 96px;
     height: 64px;
@@ -290,73 +283,5 @@ Media query
     span {
       font-size: 16px;
     }
-  }
-
-  .p-h-profile-box {
-    padding: 0 6vw;
-    border: none;
-  }
-
-  .p-h-english-name {
-    font-size: 72px;
-    margin-top: 64px;
-    margin-bottom: 16px;
-  }
-
-  .p-h-japanese-name {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-
-  .p-h-email {
-    font-size: 16px;
-    margin-bottom: 64px;
-  }
-
-  .p-h-history-wrapper {
-    display: block;
-  }
-
-  .p-h-history-title {
-    min-width: 800px;
-    margin-bottom: -16px;
-    h3 {
-      font-size: 16px;
-      font-weight: 900;
-      margin: 4px auto 8px;
-    }
-    h4 {
-      font-size: 16px;
-    }
-  }
-
-  .p-h-history-detail {
-    padding-left: 0;
-    font-size: 14px;
-    line-height: 1.5em;
-    padding-bottom: 40px;
-  }
-
-  .p-c-box-1 {
-    height: 60vw;
-  }
-
-  .p-c-box-2 {
-    height: 80vw;
-  }
-
-  .p-c-box-3 {
-    height: 100vw;
-  }
-  .p-u-box-img {
-    vertical-align: bottom;
-  }
-  .p-u-hover-comment {
-    position: absolute;
-    left: 50%;
-    width: 50%;
-    opacity: 1;
-    color: $black;
-    background-color: rgba(255, 255, 255, 0.8);
   }
 }

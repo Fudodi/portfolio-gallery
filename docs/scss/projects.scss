@@ -201,9 +201,6 @@ popup area
   background-color: rgba(0,0,0,0.8);
   overflow-y: auto;
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .p-dispNone {
@@ -213,7 +210,11 @@ popup area
 .p-body-wrapper {
   position: absolute;
   top: 0;
+  width: 100%;
   padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-body {

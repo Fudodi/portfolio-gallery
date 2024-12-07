@@ -454,10 +454,7 @@ popup area
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   overflow-y: auto;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  overflow-x: hidden; }
 
 .p-dispNone {
   display: none; }
@@ -465,7 +462,11 @@ popup area
 .p-body-wrapper {
   position: absolute;
   top: 0;
-  padding: 80px; }
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .p-body {
   position: relative;

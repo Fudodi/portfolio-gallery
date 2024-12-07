@@ -46,7 +46,7 @@
           <div class="h-image u-box-transition js-popupImage" 
             data-title="蚤の市　英語ツアーハンドブック" 
             data-detail="京都の蚤の市ツアーのために作成しました。日本の伝統的な図柄や着物、食事についてなどイラストでわかりやすく記載しています。"
-            data-img="imgs/antiques/handbook-antique-0.jpg" >
+            data-src="imgs/antiques/handbook-antique-2.jpg" >
             <div class="c-box-title">
               <h3 class="c-box-title-text">蚤の市　英語ツアーハンドブック</h3>
             </div>
@@ -118,7 +118,10 @@
       <div class="l-contents-flex">
         <div class="l-contents-box-left">
           <!-- タテに並んでいる -->
-          <div class="c-box-3 u-box-transition">
+          <div class="c-box-3 u-box-transition js-popupImage"
+            data-title="似顔絵イラスト" 
+            data-detail="知人より依頼を頂き制作しました。"
+            data-src="imgs/req_suiu_2_s.jpg">
             <div class="c-box-title">
               <h3 class="c-box-title-text">似顔絵イラスト</h3>
             </div>
@@ -127,16 +130,25 @@
         </div>
 
         <div class="l-contents-box-middle">
-          <div class="c-box-2 u-box-transition">
+          <div class="c-box-2 u-box-transition js-popupImage"
+            data-title="自主制作" 
+            data-detail=""
+            data-src="imgs/x-miaa.png">
             <img class="u-box-img" src="imgs/x-miaa.png" />
           </div>
-          <div class="c-box-2 u-box-transition">
+          <div class="c-box-2 u-box-transition js-popupImage"
+            data-title="自主制作" 
+            data-detail="以前住んでいた賃貸の物件です。"
+            data-src="imgs/medhic.png">
             <img class="u-box-img" src="imgs/medhic.png" />
           </div>
         </div>
 
         <div class="l-contents-box-right">
-          <div class="c-box-2 u-box-transition">
+          <div class="c-box-2 u-box-transition js-popupImage"
+            data-title="自主制作" 
+            data-detail=""
+            data-src="imgs/miorine.png">
             <img class="u-box-img" src="imgs/miorine.png" />
           </div>
         </div>
@@ -152,12 +164,10 @@
             <img src="imgs/upperarrow.svg" />
           </div>
           <div class="p-body-img-wrapper">
-            <img class="p-body-img u-box-img" src="imgs/medhic.png" />
+            <img id="js-popupImage" class="p-body-img u-box-img" src="" />
           </div>
-          <div class="p-body-title">サンプルタイトル</div>
-          <div class="p-body-detail">
-              サンプル文章サンプル文章サンプル文章サンプル文章サンプル文章サンプル文章サンプル文章サンプル文章
-          </div>
+          <div id="js-popupTitle" class="p-body-title"></div>
+          <div id="js-popupDetail" class="p-body-detail"></div>
         </div>
       </div>
 

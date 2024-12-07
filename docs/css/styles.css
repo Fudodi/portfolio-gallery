@@ -476,6 +476,7 @@ popup area
   padding: 40px; }
 
 .p-closeButton {
+  width: 32px;
   position: absolute;
   top: -48px;
   right: 4px;
@@ -493,6 +494,20 @@ popup area
   margin-top: 32px;
   font-size: 16px;
   line-height: 1.6em; }
+
+@media screen and (max-width: 800px) {
+  .p-body-wrapper {
+    padding: 52px 24px; }
+  .p-body {
+    padding: 24px; }
+  .p-closeButton {
+    top: -40px;
+    right: 2px; }
+  .p-body-title {
+    margin-top: 24px; }
+  .p-body-detail {
+    margin-top: 12px;
+    line-height: 1.4em; } }
 
 /*
 ======================================

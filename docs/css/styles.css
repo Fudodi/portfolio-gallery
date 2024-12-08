@@ -289,9 +289,11 @@ back to top button
 .p-link-top {
   width: 130px;
   height: 80px;
-  background-color: #222;
+  background-color: #8e8f94;
   text-align: center;
   cursor: pointer;
+  border: solid #666;
+  border-width: 1px 0 1px 1px;
   border-radius: 4px 0 0 4px; }
   .p-link-top img {
     margin-top: 7px;

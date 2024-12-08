@@ -233,6 +233,10 @@ popup area
   cursor: pointer;
 }
 
+.p-body-img-wrapper {
+  max-height: 720px;
+}
+
 //slideshow
 .p-body-slide-wrapper {
   position: relative;
@@ -250,6 +254,7 @@ popup area
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transition: all 0.5s 0s ease;
 }
 
 .p-body-slide-button-r {
@@ -263,11 +268,13 @@ popup area
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transition: all 0.5s 0s ease;
 }
 
 .p-body-slide-body {
   display: flex;
   transition: all 0.5s 0s ease;
+  max-height: 720px;
 }
 
 .p-body-slide-img {

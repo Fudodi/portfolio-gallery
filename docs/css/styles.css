@@ -482,6 +482,9 @@ popup area
   right: 4px;
   cursor: pointer; }
 
+.p-body-img-wrapper {
+  max-height: 720px; }
+
 .p-body-slide-wrapper {
   position: relative;
   overflow: hidden; }
@@ -496,7 +499,8 @@ popup area
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; }
+  z-index: 1;
+  transition: all 0.5s 0s ease; }
 
 .p-body-slide-button-r {
   width: 80px;
@@ -508,11 +512,13 @@ popup area
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; }
+  z-index: 1;
+  transition: all 0.5s 0s ease; }
 
 .p-body-slide-body {
   display: flex;
-  transition: all 0.5s 0s ease; }
+  transition: all 0.5s 0s ease;
+  max-height: 720px; }
 
 .p-body-slide-img {
   width: 100%;

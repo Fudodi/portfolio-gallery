@@ -5,7 +5,7 @@ $(function() {
     const $popupImage = $('#js-popupImage');
     const $popupSlideWrapper = $('#js-popupSlideWrapper');
     const $popupSlideButtonL = $('#js-popupSlideButtonL');
-    const $popupSlideButtonR = $('#js-popupSlideButtonL');
+    const $popupSlideButtonR = $('#js-popupSlideButtonR');
     const $popupSlideBody = $('#js-popupSlideBody');
     const $popupSlideImg = $popupSlideBody.find('.js-popupSlideImg');
     const $popupTitle = $('#js-popupTitle');
@@ -14,11 +14,10 @@ $(function() {
     let scrollTop;
     let isSlideshowOn;
     let slideIndex = [];
-    let currentIndex;
+    let currentIndex = 0;
 
     // function
     const setSlideshow = function(data) {
-        // add translatex to slidebody
         const dataList = data.split(',');
         $.each(dataList, (i, value) => {
             let $target = $popupSlideImg.clone().removeClass('p-dispNone');
@@ -29,8 +28,11 @@ $(function() {
     };
 
     const resetSlideshow = function() {
-        $popupSlideBody.empty();
+        $popupSlideBody
+        .empty()
+        .css('transform', 'translateX(0px)');
         slideIndex = [];
+        currentIndex = 0;
     };
 
     // events
@@ -54,6 +56,7 @@ $(function() {
             isSlideshowOn = true;
             $popupImgWrapper.addClass('p-dispNone');
             $popupSlideWrapper.removeClass('p-dispNone');
+            $popupSlideButtonR.css('display', '');
             setSlideshow(dataSlideshow);
         };
     });
@@ -77,5 +80,29 @@ $(function() {
 
     $('#js-popupWindowBody').on('click', function(e) {
         e.stopPropagation();
+    });
+
+    $popupSlideButtonR.on('click', function() {
+        let areaWidth = $popupSlideBody.width();
+        currentIndex += 1;
+        $popupSlideBody.css('transform', `translateX(-${areaWidth * (currentIndex)}px)`);
+        if (currentIndex + 1 == slideIndex.length) {   
+            $popupSlideButtonR.css('display', 'none');
+        }
+        if (currentIndex > 0) {
+            $popupSlideButtonL.css('display', '');
+        }
+    });
+
+    $popupSlideButtonL.on('click', function() {
+        let areaWidth = $popupSlideBody.width();
+        currentIndex -= 1;
+        $popupSlideBody.css('transform', `translateX(-${areaWidth * (currentIndex)}px)`);
+        if (currentIndex == 0) {   
+            $popupSlideButtonL.css('display', 'none');
+        }
+        if (currentIndex <= slideIndex.length) {
+            $popupSlideButtonR.css('display', '');
+        }
     });
 });

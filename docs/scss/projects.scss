@@ -257,6 +257,12 @@ popup area
   transition: all 0.5s 0s ease;
 }
 
+.p-body-slide-button-l > img {
+  width: 48px;
+  -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.6));
+}
+
 .p-body-slide-button-r {
   width: 80px;
   height: 100%;
@@ -269,6 +275,12 @@ popup area
   align-items: center;
   z-index: 1;
   transition: all 0.5s 0s ease;
+}
+
+.p-body-slide-button-r > img {
+  width: 48px;
+  -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.6));
 }
 
 .p-body-slide-body {
@@ -308,6 +320,27 @@ popup area
   .p-closeButton {
     top: -40px;
     right: 2px;
+  }
+
+  .p-body-slide-button-l {
+    padding-left: 8px;
+    justify-content: flex-start;
+  }
+  .p-body-slide-button-l > img {
+    width: 32px;
+    -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8));
+  }
+
+  .p-body-slide-button-r {
+    padding-right: 8px;
+    justify-content: flex-end;
+  }
+
+  .p-body-slide-button-r > img {
+    width: 32px;
+    -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8));
   }
 
   .p-body-title {

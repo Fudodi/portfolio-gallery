@@ -7,20 +7,30 @@ $(function() {
     const $popupSlideButtonL = $('#js-popupSlideButtonL');
     const $popupSlideButtonR = $('#js-popupSlideButtonL');
     const $popupSlideBody = $('#js-popupSlideBody');
+    const $popupSlideImg = $popupSlideBody.find('.js-popupSlideImg');
     const $popupTitle = $('#js-popupTitle');
     const $popupDetail = $('#js-popupDetail');
 
     let scrollTop;
     let isSlideshowOn;
+    let slideIndex = [];
+    let currentIndex;
 
     // function
-    const setSlideshow = function() {
-        console.log ('slide');
+    const setSlideshow = function(data) {
         // add translatex to slidebody
+        const dataList = data.split(',');
+        $.each(dataList, (i, value) => {
+            let $target = $popupSlideImg.clone().removeClass('p-dispNone');
+            $target.children('img').attr('src', value);
+            $target.appendTo($popupSlideBody);
+            slideIndex.push(i);
+        });
     };
 
     const resetSlideshow = function() {
-        console.log ('slideoff');
+        $popupSlideBody.empty();
+        slideIndex = [];
     };
 
     // events
@@ -36,13 +46,15 @@ $(function() {
         $popupTitle.append($(this).attr('data-title'));
         $popupDetail.append($(this).attr('data-detail'));
 
+        let dataSlideshow = $(this).attr('data-slideshow');
+
         //if it has the slideshow class
-        if ($(this).attr('data-slideshow')) {
+        if (dataSlideshow) {
             //show the slideshow
             isSlideshowOn = true;
             $popupImgWrapper.addClass('p-dispNone');
             $popupSlideWrapper.removeClass('p-dispNone');
-            setSlideshow();
+            setSlideshow(dataSlideshow);
         };
     });
 

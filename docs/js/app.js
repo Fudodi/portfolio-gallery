@@ -1,7 +1,12 @@
 $(function() {
     const $body = $('body');
     const $popupWindow = $('#js-popupWindow');
+    const $popupImgWrapper = $('#js-popupImgWrapper');
     const $popupImage = $('#js-popupImage');
+    const $popupSlideWrapper = $('#js-popupSlideWrapper');
+    const $popupSlideButtonL = $('#js-popupSlideButtonL');
+    const $popupSlideButtonR = $('#js-popupSlideButtonL');
+    const $popupSlideBody = $('#js-popupSlideBody');
     const $popupTitle = $('#js-popupTitle');
     const $popupDetail = $('#js-popupDetail');
 
@@ -11,7 +16,7 @@ $(function() {
     // function
     const setSlideshow = function() {
         console.log ('slide');
-
+        // add translatex to slidebody
     };
 
     const resetSlideshow = function() {
@@ -35,6 +40,8 @@ $(function() {
         if ($(this).attr('data-slideshow')) {
             //show the slideshow
             isSlideshowOn = true;
+            $popupImgWrapper.addClass('p-dispNone');
+            $popupSlideWrapper.removeClass('p-dispNone');
             setSlideshow();
         };
     });
@@ -44,6 +51,8 @@ $(function() {
         if (isSlideshowOn) {
             //off the slideshow
             isSlideshowOn = false;
+            $popupImgWrapper.removeClass('p-dispNone');
+            $popupSlideWrapper.addClass('p-dispNone');
             resetSlideshow();
         }
 

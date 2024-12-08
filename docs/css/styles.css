@@ -287,21 +287,21 @@ body.fixed {
 back to top button
 */
 .p-link-top {
-  width: 192px;
-  height: 128px;
-  background-color: #3e8cac;
+  width: 130px;
+  height: 80px;
+  background-color: #222;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 4px 0 0 4px; }
   .p-link-top img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px; }
+    margin-top: 7px;
+    width: 32px;
+    height: 32px; }
   .p-link-top span {
     color: #fff;
     font-family: "Lato", sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    margin-left: -5px; }
+    font-size: 30px;
+    font-weight: bold; }
 
 /*
 ======================================
@@ -439,7 +439,7 @@ contains area
 
 .c-box-title-text {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #e7e7e7; }
 
 /*
@@ -454,7 +454,8 @@ popup area
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  z-index: 20; }
 
 .p-dispNone {
   display: none; }
@@ -463,6 +464,7 @@ popup area
   position: absolute;
   top: 0;
   width: 100%;
+  min-height: 100vh;
   padding: 80px;
   display: flex;
   justify-content: center;
@@ -499,7 +501,7 @@ popup area
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 30;
   transition: all 0.5s 0s ease; }
 
 .p-body-slide-button-l > img {
@@ -517,7 +519,7 @@ popup area
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 30;
   transition: all 0.5s 0s ease; }
 
 .p-body-slide-button-r > img {

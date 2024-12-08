@@ -6,10 +6,21 @@ $(function() {
     const $popupDetail = $('#js-popupDetail');
 
     let scrollTop;
+    let isSlideshowOn;
 
+    // function
+    const setSlideshow = function() {
+        console.log ('slide');
+
+    };
+
+    const resetSlideshow = function() {
+        console.log ('slideoff');
+    };
+
+    // events
     $('.js-popupImage').on('click', function() {
         scrollTop = $(window).scrollTop();
-        console.log ($(this).attr('data-title'));
 
         $body.addClass('fixed').css({
             top: -scrollTop
@@ -19,9 +30,23 @@ $(function() {
         $popupImage.attr('src', $(this).attr('data-src'));
         $popupTitle.append($(this).attr('data-title'));
         $popupDetail.append($(this).attr('data-detail'));
+
+        //if it has the slideshow class
+        if ($(this).attr('data-slideshow')) {
+            //show the slideshow
+            isSlideshowOn = true;
+            setSlideshow();
+        };
     });
 
     $('#js-closePopupWindow, #js-closePopupWindowButton').on('click', function(e) {
+        //if the slideshow is on
+        if (isSlideshowOn) {
+            //off the slideshow
+            isSlideshowOn = false;
+            resetSlideshow();
+        }
+
         $body.removeClass('fixed');
         $(window).scrollTop(scrollTop);
         $popupWindow.addClass('p-dispNone');

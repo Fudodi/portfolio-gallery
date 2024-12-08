@@ -68,6 +68,7 @@ $(function() {
             isSlideshowOn = false;
             $popupImgWrapper.removeClass('p-dispNone');
             $popupSlideWrapper.addClass('p-dispNone');
+            $popupSlideButtonL.css('display', 'none');
             resetSlideshow();
         }
 
